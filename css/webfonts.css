@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/InterRegular.eot');
+  src: url('../fonts/InterRegular.eot') format('embedded-opentype'),
+       url('../fonts/InterRegular.woff2') format('woff2'),
+       url('../fonts/InterRegular.woff') format('woff'),
+       url('../fonts/InterRegular.ttf') format('truetype'),
+       url('../fonts/InterRegular.svg#InterRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/InterMedium.eot');
+  src: url('../fonts/InterMedium.eot') format('embedded-opentype'),
+       url('../fonts/InterMedium.woff2') format('woff2'),
+       url('../fonts/InterMedium.woff') format('woff'),
+       url('../fonts/InterMedium.ttf') format('truetype'),
+       url('../fonts/InterMedium.svg#InterMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/InterSemiBold.eot');
+  src: url('../fonts/InterSemiBold.eot') format('embedded-opentype'),
+       url('../fonts/InterSemiBold.woff2') format('woff2'),
+       url('../fonts/InterSemiBold.woff') format('woff'),
+       url('../fonts/InterSemiBold.ttf') format('truetype'),
+       url('../fonts/InterSemiBold.svg#InterSemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/InterBold.eot');
+  src: url('../fonts/InterBold.eot') format('embedded-opentype'),
+       url('../fonts/InterBold.woff2') format('woff2'),
+       url('../fonts/InterBold.woff') format('woff'),
+       url('../fonts/InterBold.ttf') format('truetype'),
+       url('../fonts/InterBold.svg#InterBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali UI";
+  src: url("../fonts/NotoSansBengaliUI-Regular.eot");
+  src: url("../fonts/NotoSansBengaliUI-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSansBengaliUI-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSansBengaliUI-Regular.woff") format("woff"),
+    url("../fonts/NotoSansBengaliUI-Regular.ttf") format("truetype"),
+    url("../fonts/NotoSansBengaliUI-Regular.svg#NotoSansBengaliUI-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali UI";
+  src: url("../fonts/NotoSansBengaliUI-Medium.eot");
+  src: url("../fonts/NotoSansBengaliUI-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSansBengaliUI-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSansBengaliUI-Medium.woff") format("woff"),
+    url("../fonts/NotoSansBengaliUI-Medium.ttf") format("truetype"),
+    url("../fonts/NotoSansBengaliUI-Medium.svg#NotoSansBengaliUI-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali UI";
+  src: url("../fonts/NotoSansBengaliUI-SemiBold.eot");
+  src: url("../fonts/NotoSansBengaliUI-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSansBengaliUI-SemiBold.woff2") format("woff2"),
+    url("../fonts/NotoSansBengaliUI-SemiBold.woff") format("woff"),
+    url("../fonts/NotoSansBengaliUI-SemiBold.ttf") format("truetype"),
+    url("../fonts/NotoSansBengaliUI-SemiBold.svg#NotoSansBengaliUI-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali UI";
+  src: url("../fonts/NotoSansBengaliUI-Bold.eot");
+  src: url("../fonts/NotoSansBengaliUI-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSansBengaliUI-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSansBengaliUI-Bold.woff") format("woff"),
+    url("../fonts/NotoSansBengaliUI-Bold.ttf") format("truetype"),
+    url("../fonts/NotoSansBengaliUI-Bold.svg#NotoSansBengaliUI-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inter', Noto Sans Bengali UI, sans-serif;
+}

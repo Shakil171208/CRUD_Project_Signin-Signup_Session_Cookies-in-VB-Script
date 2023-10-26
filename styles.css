@@ -1,0 +1,357 @@
+/* Navbar styles */
+.Navbar {
+  background-color: #25d1e7;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.Navbar a:hover {
+  background-color: #1a9cb7;
+  color: white;
+}
+
+.Navbar .user-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.Navbar .user-info a {
+  color: #f53636;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.Navbar .user-info a:hover {
+  color: #d41a1a;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Navbar .user-info a {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+
+/* Form container styles */
+#signupForm, #loginForm, #registerForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-top: 50px;
+}
+
+.mt-4, .my-4 {
+  margin-top: 3rem!important;
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Align form labels to the left */
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Center form headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Pagination List */
+  .pagination ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Pagination Item */
+  .pagination li {
+    margin: 0 5px;
+  }
+  
+  /* Pagination Link */
+  .pagination .page-link {
+    display: block;
+    padding: 7px 12px; 
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s; 
+    cursor: pointer; 
+    font-weight: bold; 
+    position: relative; 
+  }
+  
+  /* Active Page Link */
+  .pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #181818;
+    border-color: #181818;
+  }
+  
+  /* Disabled Page Link */
+  .pagination .page-item.disabled .page-link {
+    color: #777;
+    pointer-events: none;
+  }
+  
+  /* Page Link Ellipsis */
+  .pagination .page-item.disabled a {
+    cursor: default;
+  }
+  
+  /* Pagination Arrow Button */
+  .pagination .page-link i {
+    font-size: 15px;
+  }
+  
+  /* Hover Effect */
+  .pagination .page-link:hover {
+    background-color: #181818;
+    color: #fff;
+    border-color: #181818;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow on hover */
+  }
+  
+  /* Hover Effect on Arrow Button */
+  .pagination .page-link i:hover {
+    color: #fff;
+  }
+  
+  /* First and Last Page Links */
+  .pagination .page-link:first-child,
+  .pagination .page-link:last-child {
+    border-radius: 5px;
+  }
+  
+  /* Additional Styling for Even More Appeal */
+  .pagination .page-link {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition-timing-function: ease-out; /* Add smooth transition timing function */
+  }
+  
+  .pagination .page-link.active {
+    cursor: default;
+  }
+  
+  /* Active Page Link Hover Effect (Optional) */
+  .pagination .page-item.active .page-link:hover {
+    background-color: #181818;
+    border-color: #181818;
+  }
+  
+  /* Custom Indicator for Active Page */
+  .pagination .page-link.active::before {
+    content: ""; /* Create an empty pseudo-element for the indicator */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: #181818;
+    border-radius: 50%;
+  }
+  
+  /* Active Page Link Indicator */
+  .pagination .page-link.active::after {
+    content: "•"; /* Add a dot as the indicator */
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 6px;
+    font-weight: bold;
+  }
+  
+  /* Active Page Link Indicator Animation */
+  .pagination .page-link.active::after {
+    opacity: 0; /* Initially hide the indicator */
+    animation: fadeInOut 1s infinite; /* Add a fading in-out animation */
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive Styling (Optional) */
+  @media (max-width: 768px) {
+    .pagination .page-link {
+      padding: 5px 10px; 
+    }
+  }
+  
+   
+tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-edit {
+    text-decoration: none;
+    color: #2f3640;
+    background-color: #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    height: 30px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn-edit:hover,
+.btn-edit:focus {
+    color: #fff;
+    background-color: #4cd137;
+}
+
+.btn-edit:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(76, 209, 55, 0.2);
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-edit:focus {
+    outline: none;
+}
+
+.btn-delete {
+    text-decoration: none;
+    color: #2f3640;
+    background-color: #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    height: 30px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease 0s;
+}
+
+.btn-delete:hover,
+.btn-delete:focus {
+    color: #fff;
+    background-color: #f01c1c;
+}
+
+.btn-delete:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(232, 65, 24, 0.2);
+    border-radius: 5px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:focus {
+    outline: none;
+}
